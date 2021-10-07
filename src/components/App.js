@@ -1,10 +1,10 @@
 import React from 'react';
-import BoardgamesList from './BoardgameList';
+import BoardgamesContainer from './BoardgamesContainer';
 
 const App = () => {
         return (
             <div>
-                <BoardgamesList />
+                <BoardgamesContainer />
             </div>
         )
 }
