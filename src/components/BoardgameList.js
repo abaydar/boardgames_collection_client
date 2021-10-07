@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import BoardgamesForm from './BoardgamesForm';
 
 const BoardgamesList = () => {
 
@@ -14,6 +15,7 @@ const BoardgamesList = () => {
         return (
             <div>
                 Boardgames List
+                <BoardgamesForm />
             </div>
         )
 }
