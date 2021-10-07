@@ -14,8 +14,8 @@ const BoardgamesList = () => {
 
         return (
             <div>
-                Boardgames List
                 <BoardgamesForm />
+                
             </div>
         )
 }

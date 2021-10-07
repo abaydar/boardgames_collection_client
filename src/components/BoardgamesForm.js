@@ -26,12 +26,18 @@ const BoardgamesForm = () => {
 
     const handleSubmit = e => {
         e.preventDefault()
-        addBoardgame({boardgame: {name, yearPublished, image, minPlayers, maxPlayers, playingTime}})
+        addBoardgame({name, yearPublished, image, minPlayers, maxPlayers, playingTime})
+        setName("")
+        setYearPublished("")
+        setImage("")
+        setMinPlayers("")
+        setMaxPlayers("")
+        setPlayingTime("")
     }
 
         return (
             <div>
-                Boardgames Form
+                Add a new Boardgame
                 <form onSubmit={handleSubmit}>
                     <label>Name: </label>
                     <input type="text" value={name} onChange={(e) => setName(e.target.value)} name="name"/>
